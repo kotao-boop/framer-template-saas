@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SaaS Landing | Framer Style</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root { --bg: #030303; --text: #fff; --text-muted: #888; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); overflow-x: hidden; }
+nav { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 3rem; border-bottom: 1px solid rgba(255,255,255,0.05); }
+.logo { font-weight: 700; font-size: 1.25rem; letter-spacing: -0.04em; }
+.hero { min-height: 80vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 1rem; position: relative; }
+.hero::before { content:''; position:absolute; top: -20%; left: 50%; transform: translateX(-50%); width: 600px; height: 600px; background: radial-gradient(circle, rgba(139, 92, 246, 0.15), transparent 60%); z-index: -1; filter:blur(40px); }
+.badge { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 0.5rem 1rem; border-radius: 99px; font-size: 0.85rem; margin-bottom: 2rem; color: var(--text-muted); backdrop-filter:blur(10px); }
+h1 { font-size: 5rem; font-weight: 700; letter-spacing: -0.04em; line-height: 1.1; margin-bottom: 1.5rem; background: linear-gradient(to bottom right, #fff, #666); -webkit-background-clip: text; -webkit-text-fill-color: transparent; max-width: 800px; }
+p { color: var(--text-muted); font-size: 1.25rem; max-width: 600px; margin-bottom: 3rem; line-height: 1.6; }
+.cta { padding: 1rem 2.5rem; border-radius: 99px; background: #fff; color: #000; font-weight: 600; font-size: 1.125rem; text-decoration: none; transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); box-shadow: 0 0 40px rgba(255,255,255,0.1); }
+.cta:hover { transform: scale(1.05); box-shadow: 0 0 60px rgba(255,255,255,0.2); }
+</style>
+</head>
+<body>
+<nav>
+    <div class="logo">SaaSBase.</div>
+    <div style="font-size: 0.9rem; color: #888; font-weight: 500; cursor:pointer;">Log in</div>
+</nav>
+<main class="hero">
+    <div class="badge">✨ Announcing the new version 2.0</div>
+    <h1>Build faster, scale beautifully.</h1>
+    <p>The ultimate toolkit for modern teams. Streamline your workflow with our next-generation platform designed for absolute speed.</p>
+    <a href="#" class="cta">Start for free</a>
+</main>
+</body>
+</html>
